@@ -137,3 +137,18 @@ alert("Ju... I don't just love you.\nI choose you.\nEvery single day. 💙");
 }
 });
 </script>
+
+<script>
+function fireworks(){
+for(let i=0;i<50;i++){
+let spark=document.createElement("div");
+spark.innerHTML="✨";
+spark.style.position="fixed";
+spark.style.left=Math.random()*100+"vw";
+spark.style.top=Math.random()*100+"vh";
+spark.style.fontSize="20px";
+document.body.appendChild(spark);
+setTimeout(()=>spark.remove(),1000);
+}
+}
+</script>
