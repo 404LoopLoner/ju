@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Make A Wish 🎂</title>
+<style>
+body{
+background:#001f3f;
+color:white;
+text-align:center;
+font-family:sans-serif;
+padding-top:100px;
+}
+.cake{
+font-size:120px;
+cursor:pointer;
+transition:0.3s;
+}
+.cake:hover{
+transform:scale(1.2);
+}
+</style>
+</head>
+<body>
+
+<h1>Make A Wish Ju 💙</h1>
+<div class="cake" onclick="blowCandles()">🎂</div>
+<p id="wish"></p>
+
+<script>
+function blowCandles(){
+document.querySelector(".cake").innerHTML="🎂✨";
+document.getElementById("wish").innerHTML=
+"Your wish is locked in my heart forever 💙";
+}
+</script>
+
+</body>
+</html>
