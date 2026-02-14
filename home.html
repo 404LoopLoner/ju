@@ -41,6 +41,24 @@ box-shadow:0 0 30px #00ccff;
 </style>
 </head>
 <body>
+<audio id="bgMusic" loop>
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" style="
+position:fixed;
+top:20px;
+right:20px;
+padding:10px 20px;
+border:none;
+border-radius:20px;
+background:#00aaff;
+color:white;
+cursor:pointer;
+z-index:1000;">
+🎵 Play Music
+</button>
+
 
 <h1>Choose Our Adventure Tonight 💙</h1>
 
@@ -74,3 +92,18 @@ box-shadow:0 0 30px #00ccff;
 
 </body>
 </html>
+
+<script>
+let music=document.getElementById("bgMusic");
+let btn=document.getElementById("musicBtn");
+
+btn.onclick=function(){
+if(music.paused){
+music.play();
+btn.innerHTML="⏸ Pause Music";
+}else{
+music.pause();
+btn.innerHTML="🎵 Play Music";
+}
+}
+</script>
