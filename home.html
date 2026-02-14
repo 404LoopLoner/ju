@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ju Portal 💙</title>
+
+<style>
+body{
+margin:0;
+background:linear-gradient(135deg,#001f3f,#003366,#004080);
+font-family:sans-serif;
+color:white;
+text-align:center;
+}
+
+h1{
+margin-top:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+padding:50px;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:40px;
+border-radius:20px;
+cursor:pointer;
+transition:0.4s;
+backdrop-filter:blur(10px);
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+background:#00aaff;
+box-shadow:0 0 30px #00ccff;
+}
+</style>
+</head>
+<body>
+
+<h1>Choose Our Adventure Tonight 💙</h1>
+
+<div class="grid">
+
+<div class="card" onclick="location.href='naughty.html'">
+😏 Naughty Night
+</div>
+
+<div class="card" onclick="location.href='tired.html'">
+🥺 Comfort & Cuddles
+</div>
+
+<div class="card" onclick="location.href='chill.html'">
+🌊 Dance & Chill
+</div>
+
+<div class="card" onclick="location.href='quiz.html'">
+🧠 Love Quiz
+</div>
+
+<div class="card" onclick="location.href='game.html'">
+🎮 Catch My Love
+</div>
+
+<div class="card" onclick="location.href='surprise.html'">
+🎁 22 Surprises
+</div>
+
+</div>
+
+</body>
+</html>

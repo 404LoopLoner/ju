@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>22 Surprises 💙</title>
+<style>
+body{
+background:#001f3f;
+color:white;
+text-align:center;
+font-family:sans-serif;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
+gap:15px;
+padding:30px;
+}
+.box{
+background:#00aaff;
+padding:20px;
+border-radius:10px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>22 Reasons I Love You 💙</h1>
+
+<div class="grid" id="grid"></div>
+
+<script>
+let reasons=[
+"Your smile.",
+"Your voice.",
+"Your cute anger.",
+"Our late night talks.",
+"Your loyalty.",
+"Your blue vibe.",
+"Your hugs.",
+"Your dreams.",
+"Your laugh.",
+"Your softness.",
+"Your strength.",
+"Your honesty.",
+"Your trust.",
+"Your kindness.",
+"Your eyes.",
+"Your birthday glow.",
+"Your madness.",
+"Your comfort.",
+"Your support.",
+"Your love.",
+"My future with you.",
+"My forever Ju 💙"
+];
+
+for(let i=0;i<22;i++){
+let box=document.createElement("div");
+box.className="box";
+box.innerHTML="🎁 "+(i+1);
+box.onclick=function(){alert(reasons[i]);}
+document.getElementById("grid").appendChild(box);
+}
+</script>
+
+</body>
+</html>
